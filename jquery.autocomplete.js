@@ -191,7 +191,10 @@
           this.moveDown()
           break
         case 32: /* SPACE */
-          if (-1 === this.selectedIndex) break
+          if (-1 === this.selectedIndex) {
+            this.insertSpace()
+            break
+          }
           this.select(this.selectedIndex)
           break
         default:
@@ -411,6 +414,10 @@
     moveDown: function() {
       if (this.selectedIndex === (this.suggestions.length - 1)) return
       this.adjustScroll(this.selectedIndex + 1)
+    },
+
+    insertSpace: function() {
+      this.el.val(this.currentValue + ' ')
     },
 
     adjustScroll: function(i) {
