@@ -1,6 +1,7 @@
 {
-  "name": "jquery.autocomplete",
-  "version": "1.1.0",
+  "name": "jquery.autocomplete-multiple",
+  "version": "1.1.1",
+  "description": "Forked from: https://github.com/lloydwatkin/jquery.autocomplete",
   "devDependencies": {
     "connect": "^3.4.1",
     "mocha": "^3.2.0",
@@ -18,8 +19,25 @@
     "node": ">=4.2"
   },
   "engineStrict": true,
+  "author": {
+    "name": "zurt <kurt.zero@gmail.com>"
+  },
+  "maintainers": [
+    {
+      "name": "zurt",
+      "email": "kurt.zero@gmail.com"
+    }
+  ],
+  "bugs": {
+    "url": "https://github.com/zurt/jquery.autocomplete/issues"
+  },
+  "homepage": "https://github.com/zurt/jquery.autocomplete",
   "repository": {
     "type": "git",
-    "url": "git://github.com/lloydwatkin/jquery.autocomplete"
-  }
+    "url": "https://github.com/zurt/jquery.autocomplete.git"
+  },
+  "keywords": [
+    "jquery",
+    "autocomplete"
+  ]
 }
