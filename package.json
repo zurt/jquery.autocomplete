@@ -2,6 +2,7 @@
   "name": "jquery.autocomplete-multiple",
   "version": "1.1.1",
   "description": "Forked from: https://github.com/lloydwatkin/jquery.autocomplete",
+  "main": "jquery.autocomplete.js",
   "devDependencies": {
     "connect": "^3.4.1",
     "mocha": "^3.2.0",
