@@ -5,14 +5,21 @@
  *
  * Heavily modified from http://www.devbridge.com/projects/autocomplete/jquery/
  */
-(function($) {
+
+(function (factory) {
+  if (typeof module === "object" && typeof module.exports === "object") {
+    factory(require("jquery"), window, document);
+  } else {
+    factory(jQuery, window, document);
+  }
+}(function($) {
 
   function Autocomplete(el, options) {
     this.regEx = new RegExp(
       '(\\' + ['/', '.', '*', '+', '?', '|', '(', ')', '[', ']', '{', '}', '\\']
           .join('|\\') + ')',
       'g'
-  )
+    )
     this.el = $(el)
     this.el.attr('autocomplete', 'off')
     this.suggestions = []
@@ -506,5 +513,4 @@
         $('#' + this.mainContainerId).remove()
     },
   }
-
-})(jQuery)
+}));
